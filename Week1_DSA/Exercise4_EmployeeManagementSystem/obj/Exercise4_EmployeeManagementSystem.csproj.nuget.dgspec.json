@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise4_EmployeeManagementSystem\\Exercise4_EmployeeManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj": {
+    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise4_EmployeeManagementSystem\\Exercise4_EmployeeManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj",
-        "projectName": "Exercise2_ECommerceSearchFunction",
-        "projectPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise4_EmployeeManagementSystem\\Exercise4_EmployeeManagementSystem.csproj",
+        "projectName": "Exercise4_EmployeeManagementSystem",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise4_EmployeeManagementSystem\\Exercise4_EmployeeManagementSystem.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise4_EmployeeManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
