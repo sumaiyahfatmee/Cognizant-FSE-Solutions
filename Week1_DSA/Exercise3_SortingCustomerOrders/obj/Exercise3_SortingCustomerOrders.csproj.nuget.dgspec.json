@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise3_SortingCustomerOrders\\Exercise3_SortingCustomerOrders.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj": {
+    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise3_SortingCustomerOrders\\Exercise3_SortingCustomerOrders.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj",
-        "projectName": "Exercise2_ECommerceSearchFunction",
-        "projectPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\Exercise2_ECommerceSearchFunction.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise3_SortingCustomerOrders\\Exercise3_SortingCustomerOrders.csproj",
+        "projectName": "Exercise3_SortingCustomerOrders",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise3_SortingCustomerOrders\\Exercise3_SortingCustomerOrders.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise2_ECommerceSearchFunction\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise3_SortingCustomerOrders\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
