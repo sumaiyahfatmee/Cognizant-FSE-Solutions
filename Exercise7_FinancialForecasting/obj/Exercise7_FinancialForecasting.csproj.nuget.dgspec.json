@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj": {}
+    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise7_FinancialForecasting\\Exercise7_FinancialForecasting.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj": {
+    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise7_FinancialForecasting\\Exercise7_FinancialForecasting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj",
-        "projectName": "Exercise5_TaskManagementSystem",
-        "projectPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise7_FinancialForecasting\\Exercise7_FinancialForecasting.csproj",
+        "projectName": "Exercise7_FinancialForecasting",
+        "projectPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise7_FinancialForecasting\\Exercise7_FinancialForecasting.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\obj\\",
+        "outputPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise7_FinancialForecasting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

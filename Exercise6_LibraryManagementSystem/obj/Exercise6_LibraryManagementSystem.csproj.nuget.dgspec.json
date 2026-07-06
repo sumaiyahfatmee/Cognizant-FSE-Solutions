@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise6_LibraryManagementSystem\\Exercise6_LibraryManagementSystem.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj": {
+    "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise6_LibraryManagementSystem\\Exercise6_LibraryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj",
-        "projectName": "Exercise5_TaskManagementSystem",
-        "projectPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\Exercise5_TaskManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise6_LibraryManagementSystem\\Exercise6_LibraryManagementSystem.csproj",
+        "projectName": "Exercise6_LibraryManagementSystem",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise6_LibraryManagementSystem\\Exercise6_LibraryManagementSystem.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Week1_DSA\\Exercise5_TaskManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Cognizant-FSE-Solutions\\Exercise6_LibraryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
