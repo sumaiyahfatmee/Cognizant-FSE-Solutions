@@ -1,0 +1,22 @@
+### Login Request
+POST http://localhost:5247/api/Auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}
+
+### Secure API (Without Token)
+GET http://localhost:5247/api/Secure/data
+
+### Secure API (With Token)
+GET http://localhost:5247/api/Secure/data
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3ODQxMzkwODMsImlzcyI6Ik15QXV0aFNlcnZlciIsImF1ZCI6Ik15QXBpVXNlcnMifQ.vtr42-ASDJUcmIR5ZIbAkpdTAtlrt5vQvuoKfLYkhOs
+
+### Admin API (Without Token)
+GET http://localhost:5247/api/Admin/dashboard
+
+### Admin API (With Token)
+GET http://localhost:5247/api/Admin/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc4NDE0NDY3NCwiaXNzIjoiTXlBdXRoU2VydmVyIiwiYXVkIjoiTXlBcGlVc2VycyJ9.Zx5VpvQy2q0n3GOhOQdd6Uwn2lQd6PauHqFY1mELnYk
