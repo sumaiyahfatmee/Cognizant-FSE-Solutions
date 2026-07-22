@@ -1,0 +1,32 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+.passed {
+  color: green;
+  font-weight: bold;
+}
+
+.failed {
+  color: red;
+  font-weight: bold;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+.card--enrolled {
+  border: 3px solid green;
+}
+
+.card--full {
+  box-shadow: 0 0 10px #999;
+}
+
+.expanded {
+  min-height: 250px;
+}

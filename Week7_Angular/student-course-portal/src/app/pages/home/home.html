@@ -1,0 +1,37 @@
+<h1>{{ portalName }}</h1>
+
+<p>
+  This portal allows students to browse courses, enroll in subjects,
+  and monitor academic progress.
+</p>
+
+<div>
+  <h1 style="color:red;font-size:40px">
+  DEBUG = {{ availableCourses }}
+</h1>
+
+<p>Courses Available: {{ availableCourses }}</p>
+  <p>Enrolled: 3</p>
+  <p>GPA: 3.8</p>
+</div>
+
+<br>
+
+<button [disabled]="!isPortalActive" (click)="onEnrollClick()">
+  Enroll Now
+</button>
+
+<p>{{ message }}</p>
+
+<br>
+
+<input
+  type="text"
+  placeholder="Search Course"
+  [(ngModel)]="searchTerm"
+/>
+
+<p>Searching for: {{ searchTerm }}</p>
+<hr>
+
+<app-course-summary-widget></app-course-summary-widget>

@@ -1,0 +1,37 @@
+<input
+  type="text"
+  placeholder="Search Course"
+  [(ngModel)]="searchTerm"
+  (input)="updateSearch()"
+/>
+
+<p>Searching for: {{ searchTerm }}</p>
+
+<hr>
+
+<p *ngIf="isLoading">
+  Loading courses...
+</p>
+
+<div *ngIf="!isLoading">
+
+  <div
+    *ngFor="let course of courses; trackBy: trackByCourseId"
+    (click)="navigateToCourse(course)">
+
+    <app-course-card
+      [course]="course"
+      (enrollRequested)="onEnroll($event)">
+    </app-course-card>
+
+  </div>
+
+  <p *ngIf="selectedCourseId !== null">
+    Selected Course ID: {{ selectedCourseId }}
+  </p>
+
+  <p *ngIf="courses.length === 0">
+    No courses available.
+  </p>
+
+</div>

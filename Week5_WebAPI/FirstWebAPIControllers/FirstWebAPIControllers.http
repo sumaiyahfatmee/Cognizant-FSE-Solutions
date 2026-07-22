@@ -1,0 +1,6 @@
+@FirstWebAPIControllers_HostAddress = http://localhost:5053
+
+GET {{FirstWebAPIControllers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

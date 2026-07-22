@@ -1,0 +1,16 @@
+<h2>Students</h2>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }}
+  </li>
+</ul>
+<hr>
+
+<h2>Enrolled Courses</h2>
+
+<ul>
+  <li *ngFor="let course of enrolledCourses">
+    {{ course.name }} ({{ course.code }})
+  </li>
+</ul>
