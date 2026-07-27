@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CourseService } from '../../services/course';
+import { Course } from '../../models/course.model';
 
 @Component({
   selector: 'app-course-summary-widget',
@@ -10,42 +10,47 @@ import { CourseService } from '../../services/course';
   templateUrl: './course-summary-widget.html',
   styleUrl: './course-summary-widget.css'
 })
-export class CourseSummaryWidget implements OnInit {
-
-  totalCourses = 0;
+export class CourseSummaryWidget {
 
   constructor(private courseService: CourseService) {}
 
-  ngOnInit(): void {
-
-    this.courseService.getCourses().subscribe({
-
-      next: (courses) => {
-
-        this.totalCourses = courses.length;
-
-      }
-
-    });
-
+  get totalCourses(): number {
+    return 5;
   }
 
-  addDummyCourse() {
+  addDummyCourse(): void {
 
-    this.courseService.addCourse({
+  const course: Course = {
 
-      id: this.totalCourses + 1,
+    id: this.totalCourses + 1,
 
-      name: 'New Course',
+    name: 'New Course',
 
-      code: 'NEW10' + this.totalCourses,
+    code: 'NEW10' + this.totalCourses,
 
-      credits: 3,
+    credits: 3,
 
-      gradeStatus: 'pending'
+    gradeStatus: 'pending'
 
-    });
+  };
 
-  }
+  this.courseService.addCourse(course).subscribe({
+
+    next: () => {
+
+      alert('Course Added Successfully');
+
+    },
+
+    error: (err) => {
+
+      console.error(err);
+
+    }
+
+  });
 
 }
+
+  }
+

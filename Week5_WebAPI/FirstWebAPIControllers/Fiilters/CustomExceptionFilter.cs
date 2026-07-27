@@ -7,8 +7,12 @@ namespace FirstWebAPIControllers.Filters
     {
         public override void OnException(ExceptionContext context)
         {
-            // Log the exception to the console
-            Console.WriteLine("Exception Occurred: " + context.Exception.Message);
+            // Log exception to a text file
+            string logMessage =
+                $"[{DateTime.Now}] {context.Exception.Message}{Environment.NewLine}" +
+                $"{context.Exception.StackTrace}{Environment.NewLine}{Environment.NewLine}";
+
+            File.AppendAllText("ErrorLog.txt", logMessage);
 
             context.Result = new ObjectResult(new
             {

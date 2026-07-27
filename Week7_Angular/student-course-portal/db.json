@@ -35,5 +35,35 @@
       "credits": 4,
       "gradeStatus": "pending"
     }
-  ]
+  ],
+
+  "students": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "courseId": 1
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "courseId": 1
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "courseId": 2
+    },
+    {
+      "id": 4,
+      "name": "David",
+      "courseId": 3
+    },
+    {
+      "id": 5,
+      "name": "Eva",
+      "courseId": 5
+    }
+  ],
+
+  "$schema": "./node_modules/json-server/schema.json"
 }

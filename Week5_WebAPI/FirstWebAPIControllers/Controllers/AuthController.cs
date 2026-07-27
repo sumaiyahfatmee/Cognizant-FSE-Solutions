@@ -4,6 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using FirstWebAPIControllers.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FirstWebAPIControllers.Controllers
 {
@@ -19,7 +20,8 @@ namespace FirstWebAPIControllers.Controllers
         }
 
         [HttpPost]
-        [Route("Login")]
+         [Route("Login")]
+         [AllowAnonymous]
         public IActionResult Login([FromBody] Login login)
         {
             if (login.Username == "admin" && login.Password == "admin123")
@@ -41,7 +43,7 @@ namespace FirstWebAPIControllers.Controllers
                     issuer: configuration["Jwt:Issuer"],
                     audience: configuration["Jwt:Audience"],
                     claims: claims,
-                    expires: DateTime.Now.AddMinutes(30),
+                    expires: DateTime.Now.AddMinutes(2),
                     signingCredentials: creds
                 );
 

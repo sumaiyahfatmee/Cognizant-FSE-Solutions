@@ -13,7 +13,7 @@ if (choice == "1")
 
     var config = new ProducerConfig
     {
-        BootstrapServers = "localhost:9092"
+        BootstrapServers = "192.168.1.41:9092"
     };
 
     using var producer = new ProducerBuilder<Null, string>(config).Build();

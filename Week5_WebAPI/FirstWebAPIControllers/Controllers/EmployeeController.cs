@@ -9,7 +9,7 @@ namespace FirstWebAPIControllers.Controllers
 [Route("[controller]")]
 //[CustomAuthFilter]
 [CustomExceptionFilter]
-[Authorize]
+[Authorize(Roles = "Admin,POC")]
     public class EmployeeController : ControllerBase
     {
         private static List<Employee> employees = new List<Employee>
@@ -47,6 +47,7 @@ namespace FirstWebAPIControllers.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<List<Employee>> Get()
         {
+            
             return Ok(employees);
         }
 

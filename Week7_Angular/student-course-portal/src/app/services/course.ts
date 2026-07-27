@@ -1,71 +1,44 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-
+import { Observable, throwError } from 'rxjs';
+import { map, tap, retry, catchError } from 'rxjs/operators';
 import { Course } from '../models/course.model';
+
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
+
   private apiUrl = 'http://localhost:3000/courses';
 
-  private courses: Course[] = [
+  constructor(private http: HttpClient) {}
 
-    {
-      id: 1,
-      name: 'Data Structures',
-      code: 'CS101',
-      credits: 4,
-      gradeStatus: 'passed'
-    },
+  getCourses(): Observable<Course[]> {
+    return this.http.get<Course[]>(this.apiUrl).pipe(
+      retry(2),
+      map(courses => courses.filter(c => c.credits > 0)),
+      tap(courses => console.log('Courses loaded:', courses.length)),
+      catchError(err => {
+        console.error(err);
+        return throwError(() => new Error('Failed to load courses. Please try again.'));
+      })
+    );
+  }
 
-    {
-      id: 2,
-      name: 'Database Management',
-      code: 'CS102',
-      credits: 3,
-      gradeStatus: 'pending'
-    },
+  getCourseById(id: number): Observable<Course> {
+    return this.http.get<Course>(`${this.apiUrl}/${id}`);
+  }
 
-    {
-      id: 3,
-      name: 'Operating Systems',
-      code: 'CS103',
-      credits: 4,
-      gradeStatus: 'failed'
-    },
+  addCourse(course: Course): Observable<Course> {
+    return this.http.post<Course>(this.apiUrl, course);
+  }
 
-    {
-      id: 4,
-      name: 'Computer Networks',
-      code: 'CS104',
-      credits: 3,
-      gradeStatus: 'passed'
-    },
+  updateCourse(course: Course): Observable<Course> {
+    return this.http.put<Course>(`${this.apiUrl}/${course.id}`, course);
+  }
 
-    {
-      id: 5,
-      name: 'Software Engineering',
-      code: 'CS105',
-      credits: 4,
-      gradeStatus: 'pending'
-    }
-
-  ];
-
-constructor(private http: HttpClient) { }
- getCourses(): Observable<Course[]> {
-  return this.http.get<Course[]>(this.apiUrl);
-}
-
-getCourseById(id: number): Observable<Course> {
-  return this.http.get<Course>(`${this.apiUrl}/${id}`);
-}
-
-addCourse(course: Course): void {
-  this.courses.push(course);
-}
-
+  deleteCourse(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 
 }

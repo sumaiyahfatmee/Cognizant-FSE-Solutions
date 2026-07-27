@@ -6,7 +6,7 @@ public class Consumer
     {
         var config = new ConsumerConfig
         {
-            BootstrapServers = "localhost:9092",
+            BootstrapServers = "192.168.1.41:9092",
             GroupId = "chat-group",
             AutoOffsetReset = AutoOffsetReset.Earliest
         };
